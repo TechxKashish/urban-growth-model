@@ -572,7 +572,7 @@ with tab2:
         st.markdown('<div class="section-header">Infrastructure Score vs Growth <span class="tag">Lead Indicator</span></div>', unsafe_allow_html=True)
         fig_infra = px.scatter(
             filtered, x='infra_score', y='growth_velocity_score',
-            color='zone_class', trendline='ols',
+            color='zone_class',
             color_discrete_map={
                 "🔥 Hot Zone": "#b8ff57", "🌤 Warm Zone": "#ffb347",
                 "🌊 Stable Zone": "#00e5ff", "❄️ Cool Zone": "#4a6080"
